@@ -3,8 +3,9 @@
     padding: 0;
 }
 .main-wrap  {
-    width: 650px;
+    width: 580px;
     margin: 0 auto;
+    position: relative;
 }
 .clearfix::after {
     content: "";
@@ -34,12 +35,28 @@ header  {
 .logo   {
     display: inline-block;
     vertical-align: top;
-    padding-top: 27px;
-    padding-bottom: 23px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    font-family: segoewp-light, sans-serif;
+    font-size: 50px;
+    font-weight: 100;
 }
 #menu   {
     display: none;
     float: right;
+}
+.menu-href  {
+    background: white;
+    color: black;
+    text-decoration: none;
+    font-family: segoewp-light, sans-serif;
+    font-size: 30px;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+.menu-min-li    {
+    list-style: none;
+    padding-top: 21px;
 }
 .icon-menu:before {
     font-size: 43px;
@@ -54,35 +71,83 @@ header  {
     border-radius: 4px;
     margin-top: 22px;
 }
+#menu:checked~.menu-min {
+    display: block;
+}
+.menu-min   {
+    position: absolute;
+    display: none;
+    z-index: 1;
+    top: 90%;
+    left: 73%;
+
+}
 .slide  {
     background-image: url("../img/background-small.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 248px;
+}
+.iphone {
+    margin-top: 20px;
+    margin-left: 10px;
+    display: inline-block;
 }
 .slide-content  {
-    float: right;
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    margin-left: 60px;
 }
 .slide-h2   {
-    color: white;
-    font-size: 30px;
-    padding-top: 30px;
+    color: #e7e8e7;
+    font-size: 31px;
+    padding-top: 15px;
     padding-bottom: 20px;
+    font-family: segoewp-light, sans-serif;
+    font-weight: 100;
 }
 .slide-p    {
     font-size: 22px;
-    color: white;
-    width: 55%;
+    color: #e7e8e7;
+    width: 78%;
     line-height: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 13px;
+    font-family: segoewp-light, sans-serif;
+    font-weight: 100;
 }
 .signup {
     background: #5094f2;
     color: white;
     text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-size: 31px;
+    font-family: segoewp-light, sans-serif;
+    font-weight: 100;
+    vertical-align: bottom;
+}
+.icon-check-alt    {
+    margin-right: 10px;
 }
 .services   {
     background: white;
     background-size: cover;
+}
+.service-h2 {
+    font-family: segoewpn, sans-serif;
+    font-size: 34px;
+    font-weight: 100;
+    margin-top: 35px;
+    color: #5094f2;
+}
+.service-p  {
+    font-family: segoewpn, sans-serif;
+    font-size: 19px;
+    font-weight: 100;
+    color: #c4c4c4;
 }
 .service-cricle {
     width: 134px;
@@ -92,8 +157,9 @@ header  {
     display: inline-block;
     float: left;
     position: relative;
-    margin-top: -40px;
+    margin-top: -9px;
     margin-right: 40px;
+    margin-bottom: 25px;
 }
 .service-contary    {
     border-bottom: 1px solid #cccccc;
@@ -127,6 +193,43 @@ header  {
     left: 50%;
     margin-left: -40px;
 }
-.service-h2 {
-    margin-top: 67px;
-} 
+.cart-h2    {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom : 50px;
+    font-size: 43px;
+    font-family: segoewpn, sans-serif;
+    font-weight: 100;
+    color: #6f7173;
+}
+.cart-img   {
+    display: block;
+    margin: 0 auto;
+}
+.cart-h2-bottom {
+    margin-top: 30px;
+    margin-bottom: 35px;
+    font-size: 34px;
+    font-family: segoewpn, sans-serif;
+    font-weight: 100;
+    color: #6f7173;
+}
+.cart-p {
+    margin-bottom: 50px;
+    font-size: 17px;
+    font-family: segoewpn, sans-serif;
+    font-weight: 100;
+    color: #6f7173;
+}
+.shopping-cart  {
+    border-bottom: 1px solid #e5e5e5;
+}
+.footer-p   {
+    margin-top: 35px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 15px;
+    font-family: segoewpn, sans-serif;
+    font-weight: 100;
+    color: #6f7173;
+}

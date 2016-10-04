@@ -45,4 +45,12 @@
 .icon-cup-cake:before {
   content: "\e903";
 }
+@font-face {
+  font-family: 'segoewp-light';
+  src: url('../fonts/Segoe-WP-Light.ttf')
+}
+@font-face  {
+  font-family: segoewpn;
+  src: url('../fonts/SegoeWPN.ttf')
+}
 
