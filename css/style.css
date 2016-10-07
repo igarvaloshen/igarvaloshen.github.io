@@ -92,6 +92,10 @@ header  {
     margin-top: 20px;
     margin-left: 10px;
     display: inline-block;
+    background-image: url("../img/iphone.png");
+    background-repeat: no-repeat;
+    width: 35%;
+    height: 223px;
 }
 .slide-content  {
     display: inline-block;
@@ -205,6 +209,9 @@ header  {
 .cart-img   {
     display: block;
     margin: 0 auto;
+    background-image: url("../img/cart-small.png");
+    width: 215px;
+    height: 162px;
 }
 .cart-h2-bottom {
     margin-top: 30px;
@@ -232,4 +239,107 @@ header  {
     font-family: segoewpn, sans-serif;
     font-weight: 100;
     color: #6f7173;
+}
+
+@media screen and (min-width: 650px) {
+    .main-wrap  {
+        width: 1024px;
+    }
+    .responsive-menu {
+        display: none;
+    }
+    .menu-min   {
+        float: right;
+        display: inline-block;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        position: static;
+        padding-top: 20px;
+    }
+    .menu-min-li    {
+        display: inline-block;
+        margin-left: 15px;
+    }
+    .menu-href  {
+        font-size: 20px;
+        padding-bottom: 18px;
+        border-bottom: 0;
+        background: none;
+    }
+    .menu-href:hover    {
+        border-bottom: 4px solid #5094f2;
+        transition: 0.1s;
+    }
+    .slide  {
+        background-image: url("../img/background-big.jpg");
+        height: 479px;
+    }
+    .iphone {
+        background-image: url("../img/iphone-big.png");
+        height: 436px;
+        margin-top: 34px;
+        width: 46%;
+    }
+    .slide-content  {
+        width: 39%;
+        margin-top: 130px;
+    }
+    .slide-h2   {
+        font-size: 42px;
+    }
+    .slide-p    {
+        font-size: 26px;
+        width: 65%;
+        margin-bottom: 20px;
+    }
+    .signup {
+        font-size: 22px;
+        margin-left: 15px;
+    }
+    .services {
+        font-size: 0;
+    }
+    .service-contary    {
+        width: 33%;
+        display: inline-block;
+        text-align: center;
+        border-bottom: 0;
+    }
+    .service-cricle {
+        float: none;
+        margin: 60px 0 0 0 ;
+    }
+    .service-h2 {
+        font-size: 20px;
+        margin: 33px 0 15px 0;
+    }
+    .service-p   {
+        font-size: 14px;
+        display: inline-block;
+        width: 76%;
+    }
+    .cart-h2    {
+        text-align: left;
+    }
+    .cart-img   {
+        background-image: url("../img/cart-big.png");
+        width: 371px;
+        height: 279px;
+        display: inline-block;
+    }
+    .cart-content   {
+        display: inline-block;
+        width: calc(60% - 90px);
+        margin: -60px 0 0 90px;
+        vertical-align: top;
+    }
+    .cart-h2-bottom  {
+        margin-top: 0;
+        font-size: 26px;
+    }
+    .cart-p  {
+        font-size: 15px;
+        line-height: 3;
+    }
 }
